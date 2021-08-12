@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
- * main - prints alphabets
- * Return= 0
+ *  main - prints alphabets
+ * Return: 0
  */
 int main(void)
 {
@@ -11,7 +11,7 @@ putchar(ch);
 putchar('\n');
 /**
  * main - prints alphabets
- * Return= 0 
+ * Return:0 
  */
 return (0);
 }
