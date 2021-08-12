@@ -11,7 +11,7 @@ putchar(ch);
 putchar('\n');
 /**
  * main - prints alphabets
- * Return:0 
+ *Return:0 
  */
 return (0);
 }
