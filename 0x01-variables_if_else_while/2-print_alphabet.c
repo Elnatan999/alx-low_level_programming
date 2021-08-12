@@ -10,8 +10,7 @@ for (ch = 'a'; ch <= 'z'; ch++)
 putchar(ch);
 putchar('\n');
 /**
- * main - prints alphabets
- *Return:0 
+ * main - prints alphabets 
  */
 return (0);
 }
