@@ -1,11 +1,12 @@
 #include <stdio.h>
+#include "holberton.h"
 /**
  * main - prints  holberton
  * Return: 0
  */
 int main(void)
 {
-char c = 'H';
+char c = 'H'
 char c1 = 'o';
 char c2 = 'l';
 char c3 = 'b';
