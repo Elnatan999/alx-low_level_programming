@@ -3,29 +3,30 @@
  * main - prints  holberton
  * Return: 0
  */
-int main()
+int main(void)
 {
-char ch = 'H';
-char ch1 = 'o';
-char ch2 = 'l';
-char ch3 = 'b';
-char ch4 = 'e';
-char ch5 = 'r';
-char ch6 = 't';
-char ch7 = 'o';
-char ch8 = 'n';
-putchar(ch);
-putchar(ch1);
-putchar(ch2);
-putchar(ch3);
-putchar(ch4);
-putchar(ch5);
-putchar(ch6);
-putchar(ch7);
-putchar(ch8);
+char c = 'H';
+char c1 = 'o';
+char c2 = 'l';
+char c3 = 'b';
+char c4 = 'e';
+char c5 = 'r';
+char c6 = 't';
+char c7 = 'o';
+char c8 = 'n';
+putchar(c);
+putchar(c1);
+putchar(c2);
+putchar(c3);
+putchar(c4);
+putchar(c5);
+putchar(c6);
+putchar(c7);
+putchar(c8);
+putchar('\n');
 /**
  * main - prints holberton
  * Return: 0
  */
-return(0);
+return (0);
 }
