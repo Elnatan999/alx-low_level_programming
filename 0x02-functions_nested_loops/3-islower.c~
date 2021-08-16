@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <ctype.h>
+#include "holberton.h"
+/**
+ * _islower - proves if a char is lower
+ * Return: 0
+ */
+int _islower(int c)
+{
+islower(c);
+return (0);
+}
