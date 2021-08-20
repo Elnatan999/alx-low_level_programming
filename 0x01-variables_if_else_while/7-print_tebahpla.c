@@ -6,13 +6,9 @@
  */
 int main(void)
 {
-char word;
-char x;
-char end;
-for (word = 'a'; word <= 'z'; word++)
-end = sizeof(word) - 1;
-for (x = end; x >= 0; x--)
-putchar(x);
+char ch;
+for (ch = 'z'; ch >= 'a'; --ch)
+putchar(ch);
 putchar('\n');
 /**
  * main - print reverse

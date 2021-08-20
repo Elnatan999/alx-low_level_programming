@@ -7,7 +7,7 @@ int main(void)
 {
   char ch;
   for(ch = 'a';ch <= 'z';ch++)
-    for(ch != 'e';ch != 'q';c++)
+    for(ch != 'e';ch != 'q';ch++)
       putchar(ch);
   putchar('\n');
   /**

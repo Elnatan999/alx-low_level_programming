@@ -1,0 +1,16 @@
+#include <stdio.h>
+/**
+ * main - hexadecimal
+ * Return: 0
+ */
+int main(void)
+{
+  int ch;
+  char c;
+  for (ch = 0; ch <= 9; ch++){
+    putchar(ch);}
+  for (c = 'a'; c < 'g'; c++)
+    putchar(c);
+  putchar('\n');
+  return (0);
+}
