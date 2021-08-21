@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include "holberton.h"
+/**
+ * puts_half - cuts in half
+ * str - char para
+ * Return: 0
+ */
+void puts_half(char *str)
+{
+  char right[20];
+  int len;
+  int i;
+  int k;
+  int mid;
+  len = strlen(str);
+  if (len%2 == 0)
+    mid = len / 2;
+  if (len%2 != 0)
+    mid = (len - 1) / 2;
+  for (i = mid, k = 0; i <= len; i++, k++){
+    right[i] = str[i];}
+  right[i] = '\0';
+  puts(right);
+}
