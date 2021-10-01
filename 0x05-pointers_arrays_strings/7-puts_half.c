@@ -1,28 +1,36 @@
 #include "holberton.h"
-#include <stdio.h>
 
 /**
- * print_array - print `n` elements of an array of integers
- * @a: int type array pointer
- * @n: int type integer
- * Description: Numbers must be separated by comma and space.
- * Numbers should be displayed in the same order they are stored in array.
- * You can only use _putchar to print.
+ * _strlen - returns the length of a string
+ * @s: string s
+ * Return: length of string
+ */
+int _strlen(char *s)
+{
+
+	int length = 0;
+
+	while (*s)
+	{
+		s++;
+		length++;
+	}
+	return (length);
+}
+
+/**
+ * puts_half - prints the second half of the string
+ * @str: string
  */
 
-void print_array(int *a, int n)
+void puts_half(char *str)
 {
-	int i;
+	int length, i, half;
 
-	i = 0;
-	for (n--; n >= 0; n--, i++)
-	{
-		printf("%d", a[i]);
-		if (n > 0)
-		{
-			printf(", ");
-		}
-	}
-	printf("\n");
+	length = _strlen(str);
+	half = (length % 2 == 0) ? length / 2 : (length - 1) / 2 + 1;
 
+	for (i = half; i < length; i++)
+		_putchar(*(str + i));
+	_putchar('\n');
 }

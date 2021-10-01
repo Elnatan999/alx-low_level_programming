@@ -1,23 +1,38 @@
 #include "holberton.h"
 /**
- * puts2 - prints a string, followed by a new line,
- *
- * @str: pointer to the string to print
- *
- * Return: void
-*/
+ * _strlen - returns the length of a string
+ * @s: string s
+ * Return: length of string
+ */
+int _strlen(char *s)
+{
 
-void puts2(char *str)
+	int length = 0;
+
+	while (*s)
 {
-int i = 0;
-while (str[i] != '\0')
+		s++;
+		length++;
+}
+	return (length);
+}
+
+/**
+ * rev_string - reverses a string
+ * @s: string s
+ */
+void rev_string(char *s)
 {
-	if (i % 2 == 0)
+	int length = _strlen(s);
+	int counter = 0;
+	char tmp;
+
+	while (counter < length / 2)
 	{
-		_putchar(str[i]);
+		tmp = *(s + counter);
+		*(s + counter) = *(s + length - 1 - counter);
+		*(s + length - 1 - counter) = tmp;
+		counter++;
 	}
 
-	i++;
-}
-_putchar('\n');
 }
