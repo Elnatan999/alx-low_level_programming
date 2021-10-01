@@ -1,22 +1,20 @@
 #include <stdio.h>
+
 /**
- * main - returns even sum
+ * main - prints sum of fibo numbers under 4,000,000
  * Return: 0
  */
 int main(void)
 {
-  long int n = 4000000;
-  long int ef1 = 1;
-  long int ef2 = 2;
-  long int sum = ef1 + ef2;
-  while (ef2 <= n){
-   long int ef3 = 4 * ef2 + ef1;
-    if (ef3 > n)
-      break;
-    ef1 = ef2;
-    ef2 = ef3;
-    sum = ef2 + sum;
-    }
-  printf("%ld\n", sum);
-  return (0);
+	long int f1 = 1, f2 = 2, sum = f2, tmp;
+
+	while (f2 < 4000000)
+	{
+		tmp = f1 + f2;
+		f1 = f2;
+		f2 = tmp;
+		sum += (f2 % 2 == 0) ? f2 : 0;
+	}
+	printf("%li\n", sum);
+	return (0);
 }
