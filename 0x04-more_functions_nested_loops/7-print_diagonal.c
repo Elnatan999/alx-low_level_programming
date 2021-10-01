@@ -1,18 +1,27 @@
-#include <stdio.h>
 #include "holberton.h"
+
 /**
- * print_diagonal - prints diagonal elements
- * Return: 0
+ * print_diagonal - prints a diagonal line of length n
+ * @n: length of diagonal
+ *
+ * Return: void
  */
+
+
 void print_diagonal(int n)
 {
-int i;
-for (i = 0; i < n; i++)
-{
-_putchar(92);
-_putchar('\n');
-}
-i = 0;
-if (i >= n)
-_putchar('\n');
+	int a, b;
+
+	if (n <= 0)
+		_putchar('\n');
+	for (a = 0; a < n; a++)
+	{
+		for (b = 0; b < a; b++)
+		{
+			_putchar(' ');
+		}
+		_putchar('\\');
+		_putchar('\n');
+	}
+
 }

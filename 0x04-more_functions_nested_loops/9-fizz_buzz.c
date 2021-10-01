@@ -1,23 +1,25 @@
-#include <stdio.h>
 #include "holberton.h"
+
 /**
- * main - fizz buzz
- * Return: 0
+ * print_square - prints a square of size size
+ * @size: size of square
+ *
+ * Return: void
  */
-int main(void)
+
+void print_square(int size)
 {
-int i;
-for (i = 1; i <= 100; i++)
-{
-if (i%15 == 0)
-printf("FizzBUZZ ");
-else if (i%5 == 0)
-printf("Buzz ");
-else if (i%3 == 0)
-printf("Fizz ");
-else
-printf("%d ", i);
-}
-printf("\n");
-return (0);
+	int a, b;
+
+	if (size <= 0)
+		_putchar('\n');
+	for (a = 0; a < size; a++)
+	{
+		for (b = 0; b < (size); b++)
+		{
+			_putchar('#');
+		}
+		_putchar('\n');
+	}
+
 }

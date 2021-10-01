@@ -1,12 +1,14 @@
-#include <stdio.h>
 #include "holberton.h"
+
 /**
- * mul - multiplies
- * Return: 0
+ * mul - multiplies two integers
+ * @x: first integer
+ * @y: second integer
+ *
+ * Return: addition of a and b
  */
-int mul(int a, int b)
+
+int mul(int x, int y)
 {
-int multiply;
-multiply = a * b;
-return multiply;
+return (x * y);
 }
