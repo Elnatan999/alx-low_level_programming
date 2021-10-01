@@ -1,25 +1,27 @@
-#include "holberton.h"
+#include <stdio.h>
 
 /**
- * print_square - prints a square of size size
- * @size: size of square
- *
- * Return: void
+ * main - prints "Fizz" for numbers divisible by 3,
+ * prints "Buzz" for numbers divisible by 5,
+ * prints "FizzBuzz" for numbers divisible by 3 and 5
+ * for numbers 1-100
+ * Return: 0;
  */
-
-void print_square(int size)
+int main(void)
 {
-	int a, b;
+	int i;
 
-	if (size <= 0)
-		_putchar('\n');
-	for (a = 0; a < size; a++)
+	for (i = 1; i <= 99; i++)
 	{
-		for (b = 0; b < (size); b++)
-		{
-			_putchar('#');
-		}
-		_putchar('\n');
+		if (i % 15 == 0)
+			printf("FizzBuzz ");
+		else if (i % 3 == 0)
+			printf("Fizz ");
+		else if (i % 5 == 0)
+			printf("Buzz ");
+		else
+			printf("%i ", i);
 	}
-
+	printf("Buzz\n");
+	return (0);
 }
