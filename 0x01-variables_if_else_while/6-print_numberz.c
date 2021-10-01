@@ -5,13 +5,13 @@
  */
 int main(void)
 {
-long ch;
-long x;
-for (ch = 0; ch < 10; ch++)
-if (ch > 10)
-x = ch / 10;
-putchar(x % 10 + '0');
-putchar(x);
+int i = 48;
+while (i < 58)
+{
+  putchar(i);
+  i++;
+}
+putchar('\n');
 /**
  * main - printing number
  * Return: 0

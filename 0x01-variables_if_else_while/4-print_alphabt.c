@@ -5,11 +5,11 @@
  */
 int main(void)
 {
-  char ch;
-  for(ch = 'a';ch <= 'z';ch++)
-    for(ch != 'e';ch != 'q';ch++)
-      putchar(ch);
-  putchar('\n');
+  char c;
+for (c = 'a'; c <= 'z'; c++)
+  if (c != 'e' && c != 'q')
+    putchar(c);
+putchar('\n');
   /**
    * main - prints without q and e
    * Return: 0

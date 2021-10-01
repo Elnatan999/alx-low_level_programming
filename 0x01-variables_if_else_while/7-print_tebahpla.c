@@ -6,9 +6,12 @@
  */
 int main(void)
 {
-char ch;
-for (ch = 'z'; ch >= 'a'; --ch)
-putchar(ch);
+char a = 'z';
+while (a >= 'a')
+{
+  putchar(a);
+  a--;
+}
 putchar('\n');
 /**
  * main - print reverse
