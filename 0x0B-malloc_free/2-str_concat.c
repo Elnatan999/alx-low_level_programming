@@ -4,7 +4,6 @@
 /**
  * _strlen - returns the length of a string
  * @s: string s
- 
  * Return: length of string
  */
 int _strlen(char *s)
@@ -53,4 +52,3 @@ char *str_concat(char *s1, char *s2)
 	*_cat = '\0';
 	return (cat);
 }
-
