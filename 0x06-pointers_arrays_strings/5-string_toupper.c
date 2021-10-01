@@ -1,20 +1,20 @@
 #include "holberton.h"
 
 /**
- * reverse_array - reverses an array of integers
- * @a: array to be reversed
- * @n: number of elements in the array
+ * string_toupper - changes all lowercase letters of a string to
+ * uppercase
+ * @s: string to be passed
+ * Return: capitalized string
  */
-void reverse_array(int *a, int n)
+char *string_toupper(char *s)
 {
-	int i, j, tmp;
+	char *ptr = s;
 
-	j = n - 1;
-
-	for (i = 0; i < n / 2; i++)
+	while (*s)
 	{
-		tmp = a[i];
-		a[i] = a[j];
-		a[j--] = tmp;
+		if (*s >= 97 && *s <= 122)
+			*s -= 32;
+		s++;
 	}
+	return (ptr);
 }
