@@ -1,23 +1,23 @@
-#include <stdio.h>
-#include <string.h>
 #include "holberton.h"
 /**
- * rev_string - reverse string
- * s - s type parameter
- * Return: 0
- */
-void rev_string(char *s)
+ * puts2 - prints a string, followed by a new line,
+ *
+ * @str: pointer to the string to print
+ *
+ * Return: void
+*/
+
+void puts2(char *str)
 {
-int i;
-char temp;
-int j;
-int len;
-j = strlen(s);
-len = strlen(s) - 1;
-for (i = 0; i < j / 2; i++)
+int i = 0;
+while (str[i] != '\0')
 {
-temp = s[i];
-s[i] = s[len];
-s[len--] = temp;
+	if (i % 2 == 0)
+	{
+		_putchar(str[i]);
+	}
+
+	i++;
 }
+_putchar('\n');
 }
