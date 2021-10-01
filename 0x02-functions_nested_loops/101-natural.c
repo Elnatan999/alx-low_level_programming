@@ -1,16 +1,25 @@
+
 #include <stdio.h>
-#include <time.h>
+
 /**
- * main - prints natural numbers
- * Return: 0
+ * main - program that computes and prints the sum of all
+ * the multiples of 3 or 5 below 1024
+ * Return: int.
  */
+
 int main(void)
 {
-int x = 3;
-int y = 5;
-int n = 1023;
-int sum = 0;
-sum = x * ((n/x) * ((n/x) + 1)/2) + y * ((n/y) * ((n/y) + 1)/2) - x * y * (n/(x * y)) * ((n/(x*y)) + 1)/2;
-printf("%d\n", sum);
-return (0);
+	int multi = 0;
+	int res = 0;
+
+	while (multi < 1024)
+	{
+		if (multi % 3 == 0 || multi % 5 == 0)
+		{
+			res += multi;
+		}
+		multi += 1;
+	}
+	printf("%d\n", res);
+	return (0);
 }
